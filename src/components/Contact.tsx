@@ -4,31 +4,33 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
+const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  if (!form.current) return;
 
-    if (!form.current) return;
+  emailjs
+    .sendForm(
+      "YOUR_SERVICE_ID",   // replace with your EmailJS service ID
+      "YOUR_TEMPLATE_ID",  // replace with your EmailJS template ID
+      form.current,
+      "YOUR_PUBLIC_KEY"    // replace with your EmailJS public key
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+        alert("✅ Message sent successfully!");
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",   // replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID",  // replace with your EmailJS template ID
-        form.current,
-        "YOUR_PUBLIC_KEY"    // replace with your EmailJS public key
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("✅ Message sent successfully!");
-          e.target.reset(); // clear form
-        },
-        (error) => {
-          console.log(error.text);
-          alert("❌ Failed to send message. Try again later.");
-        }
-      );
-  };
+        // ✅ FIX: use e.currentTarget, which is correctly typed as HTMLFormElement
+        e.currentTarget.reset();
+      },
+      (error) => {
+        console.log(error.text);
+        alert("❌ Failed to send message. Try again later.");
+      }
+    );
+};
+
 
   return (
     <section id="contact" className="py-20 px-6">
