@@ -149,8 +149,8 @@ export default function Services() {
                   <div className="absolute inset-0 bg-linear-to-t from-gray-900/50 to-transparent"></div>
                 </div>
                 <div className="p-8">
-                  <div className="bg-amber-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                    <Icon className="w-8 h-8 text-amber-600" />
+                  <div className="bg-[#BDB8D9] w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                    <Icon className="w-8 h-8 text-[#433673]" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     {service.title}
@@ -160,7 +160,7 @@ export default function Services() {
                   </p>
                   <button
                     onClick={() => setSelectedService(service)}
-                    className="text-amber-600 font-semibold flex items-center space-x-2 hover:space-x-3 transition-all"
+                    className="text-[#433673] font-semibold flex items-center space-x-2 hover:space-x-3 transition-all"
                   >
                     <span>Learn More</span>
                     <ChevronRight className="w-5 h-5" />

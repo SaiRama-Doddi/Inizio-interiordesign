@@ -43,7 +43,7 @@ export default function Testimonials() {
                 "{testimonial.text}"
               </p>
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 font-bold">
+                <div className="w-12 h-12 bg-[#BDB8D9] rounded-full flex items-center justify-center text-[#433673] font-extrabold">
                   {testimonial.initials}
                 </div>
                 <div>

@@ -9,7 +9,12 @@ export default function Footer() {
           {/* Logo & About */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Home className="w-6 h-6 text-amber-500" />
+               <img
+    src="../../logo.png"
+    alt="Inizio Interiors Logo"
+    className="w-18 h-15 object-contain"
+  />
+         
               <span className="text-xl font-bold">Inizio Interiors</span>
             </div>
             <p className="text-gray-700 leading-relaxed">
