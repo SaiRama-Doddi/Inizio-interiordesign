@@ -12,8 +12,8 @@ export default function Contact() {
             </p>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="bg-amber-100 p-3 rounded-lg">
-                  <Phone className="w-6 h-6 text-amber-600" />
+                <div className="bg-[#BDB8D9] p-3 rounded-lg">
+                  <Phone className="w-6 h-6 text-[#433673]" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Call Us</p>
@@ -21,8 +21,8 @@ export default function Contact() {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="bg-amber-100 p-3 rounded-lg">
-                  <Mail className="w-6 h-6 text-amber-600" />
+                <div className="bg-[#BDB8D9] p-3 rounded-lg">
+                  <Mail className="w-6 h-6 text-[#433673]" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Email Us</p>
@@ -30,8 +30,8 @@ export default function Contact() {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="bg-amber-100 p-3 rounded-lg">
-                  <MapPin className="w-6 h-6 text-amber-600" />
+                <div className="bg-[#BDB8D9] p-3 rounded-lg">
+                  <MapPin className="w-6 h-6 text-[#433673]" />
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">Visit Us</p>
@@ -77,7 +77,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition-colors font-semibold"
+                className="w-full bg-[#362C59] text-white py-3 rounded-lg hover:bg-amber-700 transition-colors font-semibold"
               >
                 Send Message
               </button>

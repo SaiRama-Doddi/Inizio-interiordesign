@@ -16,7 +16,7 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
-            <button className="bg-amber-600 text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition-all transform hover:scale-105 flex items-center space-x-2">
+            <button className="bg-[#433673] text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition-all transform hover:scale-105 flex items-center space-x-2">
               <span>Start Your Design Journey</span>
               <ChevronRight className="w-5 h-5" />
             </button>

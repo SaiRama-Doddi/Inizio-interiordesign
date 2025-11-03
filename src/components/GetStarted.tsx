@@ -8,7 +8,7 @@ export default function GetStarted() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-8 right-8 bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition-all shadow-lg hover:shadow-xl z-40"
+        className="fixed bottom-8 right-8 bg-[#433673] text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition-all shadow-lg hover:shadow-xl z-40"
       >
         Get Started
       </button>
@@ -97,7 +97,7 @@ export default function GetStarted() {
 
               <button
                 type="submit"
-                className="w-full bg-amber-600 text-white py-2 rounded-lg hover:bg-amber-700 transition-colors font-semibold mt-6"
+                className="w-full bg-[#433673] text-white py-2 rounded-lg hover:bg-amber-700 transition-colors font-semibold mt-6"
               >
                 Schedule Consultation
               </button>
