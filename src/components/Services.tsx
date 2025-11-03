@@ -26,7 +26,7 @@ const services: Service[] = [
     description:
       "Transform your home into a masterpiece of comfort and elegance. We specialize in living rooms, bedrooms, modular kitchens, and bespoke furniture layouts.",
     image:
-      "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://i.pinimg.com/originals/7a/99/48/7a99488337275383054412f651bf1762.jpg",
     gallery: [
       "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
       "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg",
@@ -87,7 +87,7 @@ const services: Service[] = [
     description:
       "Expert lighting setups that highlight architectural details and enhance every mood with ambient, accent, and task lighting combinations.",
     image:
-      "https://images.pexels.com/photos/1121123/pexels-photo-1121123.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://cdn.shopify.com/s/files/1/0004/4630/0222/files/Statement_Lighting_-_7_Ways_To_Make_a_Statement_In_Your_Living_Room_-_LuxDeco.com.jpg?v=1563185826",
     gallery: [
       "https://images.pexels.com/photos/1121123/pexels-photo-1121123.jpeg",
       "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg",
@@ -146,7 +146,7 @@ export default function Services() {
                     alt={service.title}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-gray-900/50 to-transparent"></div>
                 </div>
                 <div className="p-8">
                   <div className="bg-amber-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
