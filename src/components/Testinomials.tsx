@@ -1,47 +1,78 @@
 import { Star } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Sarah Mitchell',
+    name: 'Samantha',
     role: 'Homeowner',
-    initials: 'SM',
-    text: 'Luxe Interior transformed our house into a home. Their attention to detail and understanding of our needs was exceptional. We couldn\'t be happier!'
+    initials: 'SA',
+    text: 'Inizio Interiors exceeded my expectations with their impeccable taste and attention to detail. Thank you for your exceptional work!'
   },
   {
-    name: 'James Chen',
-    role: 'CEO, TechCorp',
-    initials: 'JC',
-    text: 'Professional, creative, and efficient. They delivered our office redesign on time and within budget. Our team loves the new space!'
+    name: 'Prasanth',
+    role: 'Homeowner',
+    initials: 'PR',
+    text: 'I recently hired Inizio Interiors to design my home, and I must say, I am beyond impressed with the results. Highly recommend Inizio Interiors for anyone looking to elevate their interior design game.'
   },
   {
-    name: 'Emily Parker',
-    role: 'Restaurant Owner',
-    initials: 'EP',
-    text: 'Working with Luxe Interior was a dream. They listened to our vision and brought it to life beautifully. Highly recommended!'
+    name: 'Teja',
+    role: 'Working Professional',
+    initials: 'TJ',
+    text: 'As a busy working professional, I never had the time or eye for interior design. Inizio Interiors’ impeccable taste and attention to detail truly transformed my space. Highly recommended!'
+  },
+  {
+    name: 'Kavya',
+    role: 'Client',
+    initials: 'KV',
+    text: 'From the initial consultation to the final design, Inizio Interiors transformed my space into a beautiful and functional oasis. Their attention to detail and creative vision truly exceeded my expectations.'
+  },
+  {
+    name: 'Rajveer Singh',
+    role: 'Customer',
+    initials: 'RS',
+    text: 'Inizio Interiors is a one-stop solution for all your interior needs. Look no further for elegance and quality craftsmanship.'
   }
 ];
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-20 px-6 bg-gray-50">
+    <section id="testimonials" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto">
+        {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Hear what our satisfied clients have to say about their experience
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            What Our Clients Say
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Discover how <span className="text-[#433673] font-semibold">Inizio Interiors</span> brings dreams to life through design and creativity.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+
+        {/* Testimonials Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-8 rounded-2xl shadow-lg">
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.03 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white p-8 rounded-2xl shadow-md hover:shadow-2xl transition-shadow duration-300"
+            >
+              {/* Stars */}
               <div className="flex space-x-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-amber-500 text-amber-500" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                "{testimonial.text}"
+
+              {/* Text */}
+              <p className="text-gray-700 mb-6 italic leading-relaxed">
+                “{testimonial.text}”
               </p>
+
+              {/* Author */}
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-[#BDB8D9] rounded-full flex items-center justify-center text-[#433673] font-extrabold">
                   {testimonial.initials}
@@ -51,7 +82,7 @@ export default function Testimonials() {
                   <p className="text-sm text-gray-600">{testimonial.role}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

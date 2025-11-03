@@ -8,7 +8,7 @@ export default function GetStarted() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-8 right-8 bg-[#433673] text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition-all shadow-lg hover:shadow-xl z-40"
+        className="fixed bottom-8 right-8 bg-[#433673] text-white px-6 py-3 rounded-lg hover:bg-[#433673] transition-all shadow-lg hover:shadow-xl z-40 cursor-pointer"
       >
         Get Started
       </button>

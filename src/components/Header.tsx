@@ -45,6 +45,12 @@ export default function Header() {
           >
             Testimonials
           </a>
+          <a
+            href="#how-it-works"
+            className="text-gray-700 hover:text-[#362C59] transition-colors"
+          >
+            How It Works
+          </a>
          
         </div>
 
@@ -98,6 +104,13 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
             >
               Testimonials
+            </a>
+            <a
+              href="#how-it-works"
+             className="text-gray-700 hover:text-[#362C59] transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              How It Works
             </a>
            
 
