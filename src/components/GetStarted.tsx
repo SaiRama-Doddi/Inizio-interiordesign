@@ -1,18 +1,36 @@
-import { X } from 'lucide-react';
-import { useState } from 'react';
+import { X, MessageCircle } from "lucide-react";
+import { useState } from "react";
 
 export default function GetStarted() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleWhatsApp = () => {
+    const phoneNumber = "+91 86885 47851"; // 👈 replace with your WhatsApp number
+    const message = encodeURIComponent("Hi! I’d like to know more about your interior design services.");
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappURL, "_blank");
+  };
+
   return (
     <>
+      {/* Floating Get Started Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-8 right-8 bg-[#433673] text-white px-6 py-3 rounded-lg hover:bg-[#433673] transition-all shadow-lg hover:shadow-xl z-40 cursor-pointer"
+        className="fixed bottom-8 right-8 bg-[#433673] text-white px-6 py-3 rounded-lg hover:bg-[#5a48a6] transition-all shadow-lg hover:shadow-xl z-40 cursor-pointer"
       >
         Get Started
       </button>
 
+      {/* Floating WhatsApp Button */}
+      <button
+        onClick={handleWhatsApp}
+        className="fixed bottom-24 right-8 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 hover:scale-110 transition-transform duration-300 z-40"
+        aria-label="Chat on WhatsApp"
+      >
+        <MessageCircle className="w-7 h-7" />
+      </button>
+
+      {/* Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full">
@@ -34,7 +52,7 @@ export default function GetStarted() {
                 <input
                   type="text"
                   id="gs-name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] focus:border-transparent outline-none transition-all"
                   placeholder="Your name"
                 />
               </div>
@@ -46,7 +64,7 @@ export default function GetStarted() {
                 <input
                   type="email"
                   id="gs-email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] focus:border-transparent outline-none transition-all"
                   placeholder="your@email.com"
                 />
               </div>
@@ -58,8 +76,8 @@ export default function GetStarted() {
                 <input
                   type="tel"
                   id="gs-phone"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all"
-                  placeholder="+1 (555) 000-0000"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] focus:border-transparent outline-none transition-all"
+                  placeholder="+91 9876543210"
                 />
               </div>
 
@@ -69,13 +87,13 @@ export default function GetStarted() {
                 </label>
                 <select
                   id="gs-project"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] focus:border-transparent outline-none transition-all"
                 >
                   <option>Select a project type</option>
-                  <option>Residential Design</option>
-                  <option>Commercial Spaces</option>
-                  <option>Lighting Design</option>
-                  <option>Full Home Renovation</option>
+                  <option>4 BHK</option>
+                  <option>3 BHK</option>
+                  <option>2 BHK</option>
+                  <option>Villa</option>
                 </select>
               </div>
 
@@ -85,23 +103,34 @@ export default function GetStarted() {
                 </label>
                 <select
                   id="gs-budget"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] focus:border-transparent outline-none transition-all"
                 >
                   <option>Select budget range</option>
-                  <option>$5,000 - $10,000</option>
-                  <option>$10,000 - $25,000</option>
-                  <option>$25,000 - $50,000</option>
-                  <option>$50,000+</option>
+                  <option>Immediately(0-15 days)</option>
+                  <option>Within 1 Month</option>
+                  <option>Within 3 Months</option>
+                  <option>₹50L+</option>
                 </select>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#433673] text-white py-2 rounded-lg hover:bg-amber-700 transition-colors font-semibold mt-6"
+                className="w-full bg-[#433673] text-white py-2 rounded-lg hover:bg-[#5a48a6] transition-colors font-semibold mt-6"
               >
                 Schedule Consultation
               </button>
             </form>
+
+            {/* WhatsApp CTA inside modal */}
+            <div className="flex justify-center items-center p-4 border-t border-gray-200">
+              <button
+                onClick={handleWhatsApp}
+                className="flex items-center gap-2 text-green-600 font-semibold hover:text-green-700 transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Chat on WhatsApp
+              </button>
+            </div>
           </div>
         </div>
       )}
