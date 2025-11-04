@@ -119,7 +119,7 @@ export default function ServiceModal({ service, onClose }: ServiceModalProps) {
             </div>
           </div>
 
-          <div className="flex gap-4 pt-6 border-t border-gray-200">
+        {/*   <div className="flex gap-4 pt-6 border-t border-gray-200">
             <button className="flex-1 bg-gray-900 text-white py-4 rounded-xl font-semibold hover:bg-gray-800 transition-colors">
               Get a Quote
             </button>
@@ -129,7 +129,7 @@ export default function ServiceModal({ service, onClose }: ServiceModalProps) {
             >
               Close
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

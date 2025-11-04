@@ -108,7 +108,7 @@ export default function ServiceCard({ service, viewMode, onSelect }: ServiceCard
 
         <button
           onClick={onSelect}
-          className="flex items-center gap-2 text-gray-900 font-semibold hover:gap-3 transition-all text-sm"
+          className="flex items-center gap-2 text-gray-900 font-semibold hover:gap-3 transition-all text-sm cursor-pointer"
         >
           <span>View Details</span>
           <ChevronRight className="w-4 h-4" />

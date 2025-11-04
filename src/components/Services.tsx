@@ -18,9 +18,9 @@ export default function Services() {
     <section id="services" className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
             Our Interior Design Services
-          </h1>
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Transform your space with our comprehensive interior design solutions.
             From concept to completion, we bring your vision to life.
@@ -29,21 +29,22 @@ export default function Services() {
 
         <div className="mb-12">
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-            <div className="flex flex-wrap gap-3">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 ${
-                    selectedCategory === category
-                      ? 'bg-gray-900 text-white shadow-lg scale-105'
-                      : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md hover:shadow-lg'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
+          <div className="flex flex-wrap justify-center sm:justify-start gap-3 sm:gap-4 px-2 sm:px-0">
+  {categories.map((category) => (
+    <button
+      key={category}
+      onClick={() => setSelectedCategory(category)}
+      className={`px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium sm:font-semibold text-xs sm:text-sm transition-all duration-300 ${
+        selectedCategory === category
+          ? 'bg-gray-900 text-white shadow-lg scale-105'
+          : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md hover:shadow-lg'
+      }`}
+    >
+      {category}
+    </button>
+  ))}
+</div>
+
 
             <div className="flex gap-2 bg-white rounded-full p-1 shadow-md">
               <button
