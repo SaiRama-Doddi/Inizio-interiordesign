@@ -26,15 +26,7 @@ export default function Header() {
       Inizio Interiors
     </span>
 
-    <span
-      className="text-[10px] sm:text-xs md:text-sm text-gray-600 tracking-wider"
-      style={{
-        fontFamily: "'Poppins', sans-serif",
-        fontWeight: "500",
-      }}
-    >
-      For a New Beginning
-    </span>
+ 
   </div>
 </div>
 
