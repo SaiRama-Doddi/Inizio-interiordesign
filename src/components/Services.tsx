@@ -36,7 +36,7 @@ const services: Service[] = [
   },
   {
     icon: BedDouble,
-    title: "Personalized Bedroom Designs",
+    title: "Personalized Bedrooms",
     description:
       "Luxury meets comfort with custom-designed bedrooms. From bed back paneling to elegant lighting and wardrobes, every detail reflects your unique personality and lifestyle.",
     image:
@@ -62,7 +62,7 @@ const services: Service[] = [
   },
   {
     icon: Baby,
-    title: "Fun & Functional Kids Room Designs",
+    title: "Functional Kids Room ",
     description:
       "Vibrant, safe, and creative spaces for kids. Designed with playful decor, smart storage, and ergonomic layouts that grow with your child’s imagination.",
     image:
