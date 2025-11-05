@@ -21,7 +21,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-5xl font-bold text-[#433673] mb-4">
             Our Interior Design Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-6xl mx-auto leading-relaxed">
             Transform your space with our comprehensive interior design solutions.
             From concept to completion, we bring your vision to life.
           </p>

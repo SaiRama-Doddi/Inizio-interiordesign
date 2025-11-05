@@ -1,6 +1,6 @@
-import {  MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { PopupModal } from "react-calendly";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function GetStarted() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
@@ -27,10 +27,10 @@ export default function GetStarted() {
       {/* WhatsApp Button */}
       <button
         onClick={handleWhatsApp}
-        className="fixed bottom-24 right-8 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 hover:scale-110 transition-transform duration-300 z-40"
+        className="fixed bottom-24 right-8 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 hover:scale-110 transition-transform duration-300 z-40 cursor-pointer"
         aria-label="Chat on WhatsApp"
       >
-        <MessageCircle className="w-7 h-7" />
+        <FaWhatsapp className="w-8 h-8" />
       </button>
 
       {/* Calendly Popup */}

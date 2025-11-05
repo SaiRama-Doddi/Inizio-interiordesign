@@ -104,7 +104,7 @@ export default function Contact() {
                   name="user_email"
                   id="email"
                   required
-    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
                   placeholder="john@example.com"
                 />
@@ -144,9 +144,9 @@ export default function Contact() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
                 >
                   <option value="">Select Project Type</option>
-                    <option value="4bhk">4 BHK</option>
+                    <option value="4bhk">2 BHK</option>
                   <option value="3bhk">3 BHK</option>
-                  <option value="2bhk">2 BHK</option>
+                  <option value="2bhk">4 BHK</option>
                   <option value="villa">Villa</option>
                 </select>
               </div>
@@ -163,7 +163,7 @@ export default function Contact() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
                 >
                   <option value="">Select Budget Range</option>
-  <option value="immediately">Immediately (0-15 days)</option>
+                  <option value="immediately">Immediately (0-15 days)</option>
                   <option value="1month">Within 1 Month</option>
                   <option value="3months">Within 3 Months</option>
              

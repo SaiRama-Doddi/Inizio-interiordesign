@@ -100,9 +100,9 @@ const Partners: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold text-[#433673] mb-6">
-          Our Trusted Partners
+          Trusted Brands we work with
         </h2>
-        <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-600 mb-12 max-w-4xl mx-auto">
           Collaborating with the world's best brands to deliver{" "}
           <span className="text-[#433673] font-semibold">quality and elegance</span> in every design.
         </p>

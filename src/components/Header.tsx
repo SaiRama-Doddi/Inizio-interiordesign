@@ -19,10 +19,10 @@ export default function Header() {
           <div className="flex flex-col leading-none ml-[-4px] whitespace-nowrap">
             <span
               className="text-lg sm:text-xl md:text-2xl font-semibold uppercase text-[#362C59]"
-              style={{
+             /*  style={{
                 fontFamily: "'Playfair Display', serif",
                 letterSpacing: "1px",
-              }}
+              }} */
             >
               Inizio Interiors
             </span>

@@ -54,7 +54,7 @@ export default function HowItWorks(): JSX.Element {
           <h2 className="text-3xl md:text-5xl font-bold text-[#433673]">
             How It Works {/* <span className="text-[#433673]">Inizio Interiors</span> */}
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-4 text-lg text-gray-600 max-w-5xl mx-auto leading-relaxed">
             At Inizio Interiors, we follow a streamlined process that ensures every project is
             executed with precision, creativity, and care. From the initial consultation to the
             final touches, we make your design journey simple, transparent, and enjoyable.
@@ -99,7 +99,7 @@ export default function HowItWorks(): JSX.Element {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <p className="text-lg text-gray-700 mb-4">
+          <p className="text-lg text-gray-700 mb-2">
             Start Your Design Journey Today — from initial ideas to final touches, Inizio Interiors
             is here to guide you every step of the way.
           </p>

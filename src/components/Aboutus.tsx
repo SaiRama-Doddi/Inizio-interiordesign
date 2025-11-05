@@ -36,8 +36,8 @@ export default function AboutUs() {
       </div>
 
       {/* Philosophy Section */}
-      <div className="max-w-5xl mx-auto mt-20 text-center">
-        <h3 className="text-3xl font-bold text-[#362C59] mb-6">Our Philosophy</h3>
+      <div className="max-w-6xl mx-auto mt-20 text-center">
+        <h3 className="text-3xl font-bold text-[#362C59] mb-4">Our Philosophy</h3>
         <p className="text-lg text-gray-700 leading-relaxed">
           We believe that good design should be a seamless fusion of aesthetics, functionality, and 
           innovation. Our philosophy revolves around creating customized interiors that are perfectly 
@@ -47,8 +47,8 @@ export default function AboutUs() {
       </div>
 
       {/* Vision Section */}
-      <div className="max-w-5xl mx-auto mt-16 text-center">
-        <h3 className="text-3xl font-bold text-[#362C59] mb-6">Our Vision</h3>
+      <div className="max-w-6xl mx-auto mt-16 text-center">
+        <h3 className="text-3xl font-bold text-[#362C59] mb-4">Our Vision</h3>
         <p className="text-lg text-gray-700 leading-relaxed">
           Our vision at Inizio Interiors is to be Hyderabad's leading interior design firm, 
           known for transforming spaces into reflections of our clients’ tastes and aspirations. 

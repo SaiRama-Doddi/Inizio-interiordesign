@@ -139,25 +139,9 @@ export const services: Service[] = [
     tags: ['Sacred', 'Traditional', 'Minimalist'],
     featured: false,
   },
+
   {
     id: '8',
-    icon: UtensilsCrossed,
-    title: 'Elegant Dining Room Designs',
-    description:
-      'Make every meal special with elegantly designed dining rooms featuring bespoke furniture, statement lighting, and decor that celebrates togetherness.',
-    category: 'Living Spaces',
-    image:
-      'https://rperryclark.decoratingden.com/wp-content/uploads/sites/208/2021/10/0503A1-19.jpg',
-    gallery: [
-      'https://www.decorilla.com/online-decorating/wp-content/uploads/2021/08/Formal-dining-room-ideas-by-Decorilla-designer-Farzaneh-K-.jpg',
-      'https://images.pexels.com/photos/1668860/pexels-photo-1668860.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://www.decorilla.com/online-decorating/wp-content/uploads/2023/04/Bespoke-open-concept-design-by-Dina-H.jpeg',
-    ],
-    tags: ['Elegant', 'Bespoke', 'Statement Lighting'],
-    featured: false,
-  },
-  {
-    id: '9',
     icon: Briefcase,
     title: 'Functional Home Office Designs',
     description:
@@ -174,7 +158,7 @@ export const services: Service[] = [
     featured: false,
   },
   {
-    id: '10',
+    id: '9',
     icon: Home,
     title: 'Complete Home Makeovers',
     description:

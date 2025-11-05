@@ -40,11 +40,11 @@ export default function Hero() {
           </div>
           <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
             <div className="flex items-center space-x-3">
-              <div className="bg-amber-100 p-3 rounded-lg">
-                <Star className="w-6 h-6 text-amber-600" />
+              <div className="bg-[#BDB8D9] p-3 rounded-lg">
+                <Star className="w-6 h-6 text-[#433673]" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-gray-900">500+</p>
+                <p className="text-2xl font-bold text-gray-900">200+</p>
                 <p className="text-gray-600">Happy Clients</p>
               </div>
             </div>
