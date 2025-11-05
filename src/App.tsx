@@ -9,7 +9,7 @@ import GetStarted from './components/GetStarted';
 import HowItWorks from './components/HowItWorks';
 import AboutUs from './components/Aboutus';
 import Partners from './components/Partners';
-import CalendlyPopupButton from './components/CalendlyPopupButton';
+
 
 
 function App() {
