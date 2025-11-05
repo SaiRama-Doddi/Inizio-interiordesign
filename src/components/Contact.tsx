@@ -1,9 +1,27 @@
-import { useRef } from "react";
+import { useRef,useState } from "react";
 import emailjs from "emailjs-com";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
+
+    const [selectedProject, setSelectedProject] = useState("");
+  const [budgetOptions, setBudgetOptions] = useState<string[]>([]);
+
+// Mapping Project Type → Budget Ranges
+  const budgetData: Record<string, string[]> = {
+    "2bhk": ["Standard: ~10 - 12 Lacs", "Premium: ~12 - 16 Lacs", "Luxury: ~16 - 22 Lacs"],
+    "3bhk": ["Standard: ~14 - 18 Lacs", "Premium: ~18 - 26 Lacs", "Luxury: ~26 - 38 Lacs"],
+    "4bhk": ["Standard: ~20 - 26 Lacs", "Premium: ~26 - 38 Lacs", "Luxury: ~38 - 56 Lacs"],
+    "villa": ["Standard: ~20 - 26 Lacs", "Premium: ~26 - 38 Lacs", "Luxury: ~38 - 56 Lacs"],
+  };
+
+  const handleProjectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const project = e.target.value;
+    setSelectedProject(project);
+    setBudgetOptions(budgetData[project] || []);
+  };
+
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -133,27 +151,55 @@ Hyderabad- 500049</p>
   <p className="text-xs text-gray-500 mt-1">Enter a valid 10-digit mobile number</p>
 </div>
 
+{/* Project Type */}
+      <div>
+        <label
+          htmlFor="project"
+          className="block text-sm font-semibold text-gray-700 mb-2"
+        >
+          Project Type
+        </label>
+        <select
+          name="user_project"
+          id="project"
+          required
+          onChange={handleProjectChange}
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
+        >
+          <option value="">Select Project Type</option>
+          <option value="2bhk">2 BHK Apartment (800–1300 Sq Ft)</option>
+          <option value="3bhk">3 BHK Apartment (1301–2400 Sq Ft)</option>
+          <option value="4bhk">4 BHK Apartment (2401–3500 Sq Ft)</option>
+          <option value="villa">3/4 BHK Villa (1600–3500 Sq Ft)</option>
+        </select>
+      </div>
 
-              {/* Project Type */}
-              <div>
-                <label htmlFor="project" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Project Type
-                </label>
-                <select
-                  name="user_project"
-                  id="project"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
-                >
-                  <option value="">Select Project Type</option>
-                    <option value="4bhk">2 BHK</option>
-                  <option value="3bhk">3 BHK</option>
-                  <option value="2bhk">4 BHK</option>
-                  <option value="villa">Villa</option>
-                </select>
-              </div>
+      {/* Budget Range */}
+      {budgetOptions.length > 0 && (
+        <div>
+          <label
+            htmlFor="budget"
+            className="block text-sm font-semibold text-gray-700 mb-2"
+          >
+            Budget Range
+          </label>
+          <select
+            name="user_budget"
+            id="budget"
+            required
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
+          >
+            <option value="">Select Budget Range</option>
+            {budgetOptions.map((budget, index) => (
+              <option key={index} value={budget}>
+                {budget}
+              </option>
+            ))}
+          </select>
+        </div>
+      )}
 
-              {/* Budget Range */}
+              {/* Requirement Timelines */}
               <div>
                 <label htmlFor="budget" className="block text-sm font-semibold text-gray-700 mb-2">
                   Budget Range
@@ -164,11 +210,11 @@ Hyderabad- 500049</p>
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
                 >
-                  <option value="">Select Budget Range</option>
-                  <option value="immediately">Immediately (0-15 days)</option>
-                  <option value="1month">Within 1 Month</option>
-                  <option value="3months">Within 3 Months</option>
-                  <option value="greater">Greater &rarr; 3 Months</option>
+                  <option value="">Requirement Timelines</option>
+                  <option value="immediately">Immediate - (0-15 Days )</option>
+                  <option value="1month">Within - ( 30 Days ) </option>
+                  <option value="3months">Within - ( 90 Days )</option>
+                  <option value="greater">Greater &rarr;  90 Days </option>
              
                 </select>
               </div>

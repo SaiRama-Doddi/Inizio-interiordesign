@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="relative">
           <div className="aspect-square bg-linear-to-br from-amber-100 to-amber-50 rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="/hero.jpg"
+              src="https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353049/hero_tvvzzg.jpg"
               alt="Modern interior design"
               className="w-full h-full object-cover"
             />
