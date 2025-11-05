@@ -1,31 +1,31 @@
 const portfolioItems = [
   {
-    image: '../../public/p-1.jpg',
+    image: '/p-1.jpg',
     title: 'Modern Kitchen',
     category: 'Minimalist Design'
   },
   {
-    image: '../../public/p-2.jpg',
+    image: '/p-2.jpg',
     title: 'Luxurious Living Room',
     category: 'Luxury Comfort'
   },
   {
-    image: '../../public/p-3.jpg',
+    image: '/p-3.jpg',
     title: 'Elegant Dining Room',
     category: 'Classic Style'
   },
   {
-    image: '../../public/p-4.jpg',
+    image: '/p-4.jpg',
     title: 'Modern Bedroom',
     category: 'Functional Beauty'
   },  
   {
-    image: '../../public/p-5.jpg',
+    image: '/p-5.jpg',
     title: 'Cozy Office Space',
     category: 'Productive Environment'
   },
   {
-    image: '../../public/p-6.jpg',
+    image: '/p-6.jpg',
     title: 'Contemporary Living Area',
     category: 'Relaxation Suite'
   }
