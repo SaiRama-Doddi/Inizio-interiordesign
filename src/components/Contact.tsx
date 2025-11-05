@@ -18,7 +18,7 @@ export default function Contact() {
         (result) => {
           console.log(result.text);
           alert("✅ Consultation request sent successfully!");
-          e.currentTarget.reset();
+        form.current?.reset(); 
           if (form.current) {
             form.current.reset();
           }
@@ -104,6 +104,7 @@ export default function Contact() {
                   name="user_email"
                   id="email"
                   required
+    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
                   placeholder="john@example.com"
                 />
@@ -172,7 +173,7 @@ export default function Contact() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full bg-[#362C59] text-white py-3 rounded-lg hover:bg-[#433673] transition-colors font-semibold"
+                className="w-full bg-[#362C59] text-white py-3 rounded-lg hover:bg-[#433673] transition-colors font-semibold cursor-pointer"
               >
                 Send Consultation Request
               </button>
