@@ -10,12 +10,12 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
                <img
-    src="../../logo.png"
+    src="/1.1.png"
     alt="Inizio Interiors Logo"
     className="w-18 h-15 object-contain"
   />
          
-              <span className="text-xl font-bold">Inizio Interiors</span>
+              <span  className="text-lg sm:text-xl md:text-2xl font-semibold uppercase text-[#362C59]">Inizio Interiors</span>
             </div>
             <p className="text-gray-700 leading-relaxed">
               Designing spaces that blend elegance, comfort, and creativity —
@@ -30,7 +30,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#home"
-                  className="hover:text-amber-500 transition-colors"
+                  className="hover:text-[#231c3a] transition-colors"
                 >
                   Home
                 </a>
@@ -38,7 +38,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="hover:text-amber-500 transition-colors"
+                  className="hover:text-[#231c3a] transition-colors"
                 >
                   Services
                 </a>
@@ -46,7 +46,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#portfolio"
-                  className="hover:text-amber-500 transition-colors"
+                  className="hover:text-[#231c3a] transition-colors"
                 >
                   Portfolio
                 </a>
@@ -54,7 +54,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="hover:text-amber-500 transition-colors"
+                  className="hover:text-[#231c3a] transition-colors"
                 >
                   Contact
                 </a>
