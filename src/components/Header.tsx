@@ -11,7 +11,7 @@ export default function Header() {
         {/* Logo Section */}
         <div className="flex items-center space-x-0">
           <img
-            src="../../1.1.png"
+            src="/1.1.png"
             alt="Inizio Interiors Logo"
             className="w-28 sm:w-32 md:w-36 h-auto object-contain -my-2"
           />
