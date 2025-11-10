@@ -10,7 +10,7 @@ const portfolioItems = [
     category: 'Luxury Comfort'
   },
   {
-    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762703302/dining_gg6bjd.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782055/Elegant_Dining_Room_ghhcvi.jpg',
     title: 'Elegant Dining Room',
     category: 'Classic Style'
   },
@@ -20,7 +20,7 @@ const portfolioItems = [
     category: 'Functional Beauty'
   },  
   {
-    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762353326/p-5_ojuwmx.jpg',
+    image: 'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782054/Cozy_Office_Space_eyl5bc.jpg',
     title: 'Cozy Office Space',
     category: 'Productive Environment'
   },

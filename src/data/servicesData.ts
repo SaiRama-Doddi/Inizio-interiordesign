@@ -116,8 +116,8 @@ export const services: Service[] = [
       'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693656/Home_Theatre_y91b4f.jpg',
     gallery: [
       'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693656/TV_Unit_szjlug.jpg',
-      'https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-1657179080-NnXAg/tv-unit-1657603921-6y6tm/living-view-3-option-2-1-1-1662029420-4RCM2.jpg',
-      'https://i.pinimg.com/originals/34/7a/6d/347a6d8835e0be95bbfb649a40ac76c7.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782055/EEU_-_2_ihitum.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782055/EEU_-_3_g1llqe.jpg',
     ],
     tags: ['Entertainment', 'Display', 'Modern'],
     featured: false,
@@ -148,7 +148,7 @@ export const services: Service[] = [
       'Boost productivity and creativity with ergonomic home office designs featuring intelligent layouts, inspiring decor, and functional organization.',
     category: 'Functional Areas',
     image:
-      'https://www.sanfrandesign.com/wp-content/uploads/2020/08/Worry-About-Function.jpg',
+      'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762782055/Functional_Home_Office_-_1_fgb94y.jpg',
     gallery: [
       'https://stylesatlife.com/wp-content/uploads/2020/01/Best-Office-Interior-Designs.jpg',
       'https://res.cloudinary.com/dxvabsqrq/image/upload/v1762693885/Home_Office_2_wn4lcy.jpg',

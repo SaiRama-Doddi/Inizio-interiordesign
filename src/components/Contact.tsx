@@ -180,16 +180,16 @@ export default function Contact() {
 {/* Area */}
 <div>
   <label
-    htmlFor="area"
+    htmlFor="location"
     className="block text-sm font-semibold text-gray-700 mb-2"
   >
     Area (in Sq. Ft)
   </label>
   <input
     type="text"
-    name="user_area"
-    id="area"
-    placeholder="e.g., 1200 Sq Ft"
+    name="user_location"
+    id="location"
+    placeholder="location"
     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#433673] outline-none"
   />
 </div>
