@@ -284,7 +284,7 @@ export default function Contact() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full bg-[#362C59] text-white py-3 rounded-lg hover:bg-[#433673] transition-colors font-semibold cursor-pointer"
+                className="w-full bg-[#362C59] text-white py-3 rounded-lg hover:bg-[#463a71] transition-colors font-semibold cursor-pointer"
               >
                 Send Consultation Request
               </button>
