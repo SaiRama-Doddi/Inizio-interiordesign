@@ -9,12 +9,23 @@ import GetStarted from './components/GetStarted';
 import HowItWorks from './components/HowItWorks';
 import AboutUs from './components/Aboutus';
 import Partners from './components/Partners';
+import SEO from './components/SEO';
+import LLM from './pages/LLM';
 
 
 
 function App() {
+  const path=window.location.pathname;
+
+  if(path==="/llm"){
+    return <LLM/>
+  }
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Inizio Interiors — Premium Interior Designers in Hyderabad"
+        description="We design premium modular kitchens, wardrobes, living spaces and complete home interiors with modern craftsmanship and affordable luxury."
+      />
       <Header />
       <Hero />
       <Services />
