@@ -1,4 +1,4 @@
-# Allow trusted LLM crawlers
+# Allow all LLM-friendly crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -8,10 +8,13 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-# Block sensitive and private routes
+User-agent: Google-Extended
+Allow: /
+
+# Allow everyone else
 User-agent: *
-Disallow: /admin/
-Disallow: /dashboard/
-Disallow: /api/
-Disallow: /login/
-Disallow: /settings/
+Allow: /
+
+# Optional: Block malicious scrapers
+User-agent: MJ12bot
+Disallow: /
