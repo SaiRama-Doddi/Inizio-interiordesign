@@ -1,4 +1,6 @@
 import {  MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
+import { Heart } from "lucide-react";
+
 
 export default function Footer() {
   return (
@@ -133,6 +135,14 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} Inizio Interiors. All rights reserved.
           </p>
+
+           {/* Made with Love */}
+  <div className="flex items-center justify-center gap-1 mt-2 text-gray-700">
+    <span>Made with</span>
+<Heart className="w-4 h-4 text-red-500 fill-red-500" />
+
+    <span>by Inizio Interiors</span>
+  </div>
         </div>
       </div>
     </footer>
